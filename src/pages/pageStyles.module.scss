@@ -1,0 +1,11 @@
+// --------------------------------Root Page-------------------------------- //
+$base-blue: #006496;
+
+.appContent {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 129px);
+}
+
+
