@@ -1,0 +1,22 @@
+// ====================================header Component===================================== //
+@use "../pages/pageStyles.module.scss";
+
+.navToolbar {
+  display: flex;
+  justify-content: space-between;
+  background: pageStyles.$base-blue;
+}
+
+// ====================================Footer Component===================================== //
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 64px;
+  border-top: 1px solid #dddddd;
+  padding: 0 24px;
+  img {
+    width: auto;
+    height: 40%;
+  }
+}
