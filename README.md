@@ -14,5 +14,5 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `node app.js` 
-to run server locally you need to navigate to ### `cd server/` then run the server on portn 3001
+to run server locally you need to navigate to `cd server/` then run the server on portn 3001
 
