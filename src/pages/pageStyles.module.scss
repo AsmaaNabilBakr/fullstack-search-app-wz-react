@@ -3,9 +3,111 @@ $base-blue: #006496;
 
 .appContent {
   display: flex !important;
-  justify-content: center;
-  align-items: center;
+
   min-height: calc(100vh - 129px);
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
+// --------------------------------Search Page-------------------------------- //
+.SearchPage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .searchInput {
+    padding: 0 10px 0 24px;
+    height: 50px;
+    background: #006496;
+    width: 100%;
+    &:hover {
+      border: none;
+    }
+    input {
+      color: #fff;
+    }
+    svg {
+      color: #fff;
+    }
+    a {
+      cursor: pointer;
+      background: transparent !important;
+      border: none;
+    }
+  }
+}
 
+// --------------------------------Results Page-------------------------------- //
+
+.searchResultsPage {
+  width: 100%;
+  h1 {
+    margin-bottom: 2%;
+  }
+  .card {
+    height: 400px;
+    .cardImg {
+      height: 60%;
+      position: relative;
+      overflow: hidden;
+      img {
+        height: 100%;
+        object-position: 0 0;
+        transition: transform 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    h2{
+      margin: 5px 0;
+    }
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      line-height: 22px;
+    }
+  }
+  button {
+    display: flex;
+    align-items: center;
+    border: 1px solid $base-blue;
+    font-weight: bold;
+    margin-bottom: 2%;
+    transition: all 0.5s;
+    text-transform: capitalize;
+    svg {
+      margin-right: 7px;
+    }
+    &:hover {
+      background-color: $base-blue !important;
+      color: #fff !important;
+    }
+  }
+  h3 {
+    text-align: center;
+    margin-top: calc(65vh / 2);
+  }
+}
+
+// --------------------------------Erorr Page-------------------------------- //
+.errorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 130px);
+  width: 100%;
+  button {
+    background: $base-blue;
+    color: #fff;
+    svg {
+      margin-right: 10px;
+    }
+    &:hover {
+      background: $base-blue;
+    }
+  }
+}
