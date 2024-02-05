@@ -6,13 +6,15 @@ import { useNavigate, useParams } from "react-router-dom";
 import styles from "./pageStyles.module.scss";
 function SearchResults() {
   const navigate = useNavigate();
-  const { query } = useParams(); 
+  const { query } = useParams();
   const [resultsToShow, setResultsToShow] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/search?q=${query}`); // Adjust the URL based on your server configuration
+        const response = await fetch(
+          `https://search-app-server.vercel.app/search?q=${query}`
+        );
         const data = await response.json();
         setResultsToShow(data);
       } catch (error) {
