@@ -5,9 +5,9 @@ const searchRouter = require("./services/search");
 const app = express();
 
 app.use(cors());
-app.use("/", (req, res) => {
-  res.send("server is running.");
-});
+// app.use("/", (req, res) => {
+//   res.send("server is running.");
+// });
 app.use("/search", searchRouter);
 
 app.use((err, req, res, next) => {
